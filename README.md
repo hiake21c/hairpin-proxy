@@ -10,7 +10,7 @@ If your coredns uses a different configmap other than coredns, please modify COR
 If you want to keep customized coredns config in different configmap, please set COREDNS_IMPORT_CONFIG to true in the hairpin-proxy-controller deployment config.
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/saithejareddy/hairpin-proxy/master/deploy.yml
+kubectl apply -f https://raw.githubusercontent.com/compumike/hairpin-proxy/v0.2.1/deploy.yml
 ```
 
 If you're using [ingress-nginx](https://kubernetes.github.io/ingress-nginx/) and [cert-manager](https://github.com/jetstack/cert-manager), it will work out of the box. See detailed installation and testing instructions below.
@@ -78,7 +78,7 @@ If your coredns uses a different configmap other than coredns, please modify COR
 If you want to keep customized coredns config in different configmap, please set COREDNS_IMPORT_CONFIG to true in the hairpin-proxy-controller deployment config.
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/saithejareddy/hairpin-proxy/master/deploy.yml
+kubectl apply -f https://raw.githubusercontent.com/compumike/hairpin-proxy/v0.2.1/deploy.yml
 ```
 
 If you're using `ingress-nginx`, this will work as-is.
@@ -135,5 +135,5 @@ To resolve this, we need to rewrite the DNS on the Node itself. The Node does no
 To install this DaemonSet:
 
 ```shell
-kubectl apply -f https://raw.githubusercontent.com/saithejareddy/hairpin-proxy/master/deploy-etchosts-daemonset.yml
+kubectl apply -f https://raw.githubusercontent.com/compumike/hairpin-proxy/v0.2.1/deploy-etchosts-daemonset.yml
 ```
