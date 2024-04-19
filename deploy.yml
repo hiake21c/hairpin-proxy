@@ -167,3 +167,13 @@ spec:
             limits:
               memory: "100Mi"
               cpu: "50m"
+
+---
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: coredns-custom
+  namespace: kube-system
+data:
+  hairpinproxy.include: ""
